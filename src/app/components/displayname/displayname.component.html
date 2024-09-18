@@ -1,0 +1,5 @@
+<div>
+  <input [(ngModel)]="name" placeholder="Enter your name" />
+  <button (click)="display()">Display Name</button>
+  <p *ngIf="displayedName">Hello, {{ displayedName }}!</p>
+</div>

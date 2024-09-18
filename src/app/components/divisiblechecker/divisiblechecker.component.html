@@ -1,0 +1,16 @@
+<div>
+  <h2>Divisible Checker</h2>
+  <label for="number1">Number 1:</label>
+  <input id="number1" type="number" [(ngModel)]="number1" />
+
+  <label for="number2">Number 2:</label>
+  <input id="number2" type="number" [(ngModel)]="number2" />
+
+  <button (click)="checkDivisibility()">Check Divisibility</button>
+
+  <div *ngIf="isDivisible !== null">
+    <p *ngIf="isDivisible">Number 1 is divisible by Number 2.</p>
+    <p *ngIf="!isDivisible">Number 1 is not divisible by Number 2.</p>
+    <p *ngIf="number2 === 0">Cannot divide by zero.</p>
+  </div>
+</div>

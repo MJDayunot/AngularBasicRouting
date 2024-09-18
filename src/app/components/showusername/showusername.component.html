@@ -1,0 +1,13 @@
+<div>
+  <h2>Show Username</h2>
+
+  <label for="username">Enter your username:</label>
+  <input type="text" id="username" [(ngModel)]="username" name="username" placeholder="Enter username" />
+
+  <button (click)="displayUsername()">Display Username</button>
+
+  <div *ngIf="displayedUsername">
+    <h3>Your Username:</h3>
+    <p>{{ displayedUsername }}</p>
+  </div>
+</div>

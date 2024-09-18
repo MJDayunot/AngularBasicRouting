@@ -1,0 +1,9 @@
+<div>
+  <h2>Random Quote Display</h2>
+  <button (click)="showRandomQuote()">Show Random Quote</button>
+
+  <div *ngIf="currentQuote">
+    <h3>Quote:</h3>
+    <p>{{ currentQuote }}</p>
+  </div>
+</div>

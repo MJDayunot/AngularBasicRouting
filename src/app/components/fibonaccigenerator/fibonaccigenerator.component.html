@@ -1,0 +1,13 @@
+<div>
+  <h2>Fibonacci Generator</h2>
+  <label for="count">Number of Fibonacci numbers:</label>
+  <input id="count" type="number" [(ngModel)]="count" placeholder="Enter number" />
+  <br>
+  <button (click)="generateFibonacci()">Generate</button>
+  <div *ngIf="fibonacciNumbers.length > 0">
+    <h3>Fibonacci Numbers:</h3>
+    <ul>
+      <li *ngFor="let number of fibonacciNumbers">{{ number }}</li>
+    </ul>
+  </div>
+</div>
